@@ -48,9 +48,10 @@ class Alarm:
 
     def write_to_file(self, name, date, reminder, description, contact):
         f = open("text.txt", "a")
-        f.write(name + "," + date + "," + reminder + "," + description + "," + contact)
+        f.write(name + "," + date + "," + reminder + "," + description + "," + contact + "\n")
         f.close()
 
+"""
 a1 = Alarm()
 
 a1.set_alarm_name('Wake-up')
@@ -60,7 +61,7 @@ a1.set_alarm_contact('rlong2@uccs.edu')
 
 a1.write_to_file(a1.get_alarm_name(), a1.get_alarm_date(), 'now', a1.get_alarm_description(), a1.get_alarm_contact())
 print(a1.get_alarm_date())
-
+"""
 
 
 
