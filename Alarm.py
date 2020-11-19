@@ -23,7 +23,7 @@ class Alarm:
         self.__alarm_reminder = alarm_reminder
         self.__alarm_description = alarm_description
         self.__alarm_contact = alarm_contact
-
+# Getters
     def get_alarm_name(self):
         return self.__alarm_name
     def get_alarm_date(self):
@@ -34,7 +34,7 @@ class Alarm:
         return self.__alarm_description
     def get_alarm_contact(self):
         return self.__alarm_contact
-
+# Setters
     def set_alarm_name(self, name):
         self.__alarm_name = name
     def set_alarm_date(self, date):
@@ -51,10 +51,11 @@ class Alarm:
         f.write(name + "," + date + "," + reminder + "," + description + "," + contact + "\n")
         f.close()
 
-"""
-a1 = Alarm()
 
-a1.set_alarm_name('Wake-up')
+a1 = Alarm()
+"""
+a1.set_alarm_name(input('enter name'))
+
 a1.set_alarm_date('11-15-2020/08:00')
 a1.set_alarm_description('time to do homework')
 a1.set_alarm_contact('rlong2@uccs.edu')
